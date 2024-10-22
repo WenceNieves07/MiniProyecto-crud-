@@ -1,0 +1,44 @@
+/* Para pantallas con un ancho mínimo de 768 píxeles (tabletas y pantallas más grandes) */
+@media (min-width: 768px) {
+    /* Clase que aplica a los contenedores del formulario y de la tabla */
+    .form-container, .table-container {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+
+    /* Clase que se utiliza para crear un espacio entre el formulario y la tabla */
+    .spacer {
+        flex: 0 0 4%;
+        max-width: 4%;
+    }
+}
+
+/* Para pantallas con un ancho máximo de 767 píxeles (teléfonos móviles y pantallas más pequeñas) */
+@media (max-width: 767px) {
+    .table-container {
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para el fondo de la página */
+body {
+    background-image: url('fondo.jpg'); /* Ajusta la ruta según tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Estilos para el formulario y la tabla */
+.card, .table-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    margin-top: 20px;
+}
